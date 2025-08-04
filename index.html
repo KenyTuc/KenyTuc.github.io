@@ -7,6 +7,142 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
+    /* 新增公告区样式 */
+    .announcement-section {
+      background: linear-gradient(135deg, #1a1a1a, #2a0a0a);
+      padding: 80px 20px;
+      position: relative;
+      overflow: hidden;
+      margin: 60px 0;
+    }
+    
+    .announcement-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+    
+    .announcement-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+      border-bottom: 2px solid var(--accent-red);
+      padding-bottom: 15px;
+    }
+    
+    .announcement-header h3 {
+      color: var(--accent-red);
+      font-size: 2.2rem;
+      margin: 0;
+      position: relative;
+      padding-left: 15px;
+    }
+    
+    .announcement-header h3::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 5px;
+      height: 70%;
+      background: var(--accent-red);
+    }
+    
+    .announcements {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+    
+    .announcement-card {
+      background: rgba(30, 30, 30, 0.8);
+      border-radius: 8px;
+      padding: 25px;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      border-left: 4px solid var(--accent-red);
+    }
+    
+    .announcement-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(255, 59, 59, 0.25);
+    }
+    
+    .announcement-card .date {
+      color: var(--accent-red);
+      font-size: 0.95rem;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+    }
+    
+    .announcement-card .date i {
+      margin-right: 8px;
+      font-size: 1rem;
+    }
+    
+    .announcement-card h4 {
+      color: white;
+      font-size: 1.4rem;
+      margin-bottom: 15px;
+      line-height: 1.4;
+    }
+    
+    .announcement-card p {
+      color: #ddd;
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+    
+    .read-more {
+      display: inline-flex;
+      align-items: center;
+      color: var(--accent-red);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: var(--transition);
+    }
+    
+    .read-more i {
+      margin-left: 6px;
+      transition: transform 0.3s ease;
+    }
+    
+    .read-more:hover {
+      color: #ff6b6b;
+    }
+    
+    .read-more:hover i {
+      transform: translateX(4px);
+    }
+    
+    .view-all {
+      display: inline-flex;
+      align-items: center;
+      color: var(--accent-red);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: var(--transition);
+      padding: 8px 15px;
+      border: 1px solid var(--accent-red);
+      border-radius: 4px;
+    }
+    
+    .view-all:hover {
+      background: var(--accent-red);
+      color: white;
+    }
+    
+    /* 原有样式保持不变 */
     :root {
       --primary-dark: #121212;
       --secondary-dark: #1a1a1a;
@@ -445,10 +581,20 @@
       .quote {
         font-size: 1.2rem;
       }
+      
+      .announcement-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
+      .announcement-header h3 {
+        margin-bottom: 15px;
+      }
     }
   </style>
 </head>
 <body>
+  <!-- 头部和导航保持不变 -->
   <header>
     <h1>纳粹王朝</h1>
     <p>极权主义研究与反思小组</p>
@@ -587,6 +733,39 @@
     </div>
   </section>
 
+  <!-- 新增公告区 -->
+  <section class="announcement-section">
+    <div class="announcement-container">
+      <div class="announcement-header">
+        <h3>研究动态与公告</h3>
+        <a href="#" class="view-all">查看所有公告 <i class="fas fa-arrow-right"></i></a>
+      </div>
+      
+      <div class="announcements">
+        <div class="announcement-card">
+          <div class="date"><i class="far fa-calendar-alt"></i> 2025年9月15日</div>
+          <h4>秋季学术研讨会邀请</h4>
+          <p>我们将在10月20日举办"极权主义的历史回声"主题研讨会，特邀国内外知名学者参与讨论。现已开放报名通道。</p>
+          <a href="#" class="read-more">阅读详情 <i class="fas fa-chevron-right"></i></a>
+        </div>
+        
+        <div class="announcement-card">
+          <div class="date"><i class="far fa-calendar-alt"></i> 2025年8月28日</div>
+          <h4>新档案资料开放访问</h4>
+          <p>新增1942-1945年柏林地区社会档案数字化资料，包含2000余份未公开文件，现已开放学术研究申请。</p>
+          <a href="#" class="read-more">阅读详情 <i class="fas fa-chevron-right"></i></a>
+        </div>
+        
+        <div class="announcement-card">
+          <div class="date"><i class="far fa-calendar-alt"></i> 2025年7月10日</div>
+          <h4>研究资助计划启动</h4>
+          <p>2025-2026年度青年学者研究资助计划正式启动，支持有关二战时期宣传机制的比较研究项目。</p>
+          <a href="#" class="read-more">阅读详情 <i class="fas fa-chevron-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="section" id="contact">
     <h3 class="section-title">加入研究</h3>
     <p>
@@ -599,7 +778,7 @@
   </section>
 
   <footer>
-    <p>© 2025 纳粹王朝研究小组 | 本站内容基于历史档案与学术研究，旨在教育与警示。严禁任何形式的极端主义宣传与历史歪曲。</p>
+    <p>? 2025 纳粹王朝研究小组 | 本站内容基于历史档案与学术研究，旨在教育与警示。严禁任何形式的极端主义宣传与历史歪曲。</p>
     <p>研究伦理准则：我们坚持学术中立原则，反对任何形式的极权主义美化，致力于促进人权与民主价值观。</p>
     <div class="footer-links">
       <a href="#"><i class="fab fa-github"></i></a>
@@ -642,4 +821,4 @@
     });
   </script>
 </body>
-  </html>
+</html>
