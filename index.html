@@ -1,201 +1,37 @@
-<!doctype html>
-<html lang="zh-CN">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>红黑渐变博客</title>
-  <style>
-    :root{
-      --max-width:1100px;
-      --glass-bg: rgba(255,255,255,0.06);
-    }
-    html,body{height:100%;margin:0;font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;}
-    body{
-      /* 渐变：从上红到下黑 */
-      background: linear-gradient(to bottom, #ff0000 0%, #000000 100%);
-      color:#fff;
-      display:flex;align-items:center;justify-content:center;padding:24px;box-sizing:border-box;
-    }
-    .wrap{width:100%;max-width:var(--max-width);height:calc(100vh - 48px);display:flex;flex-direction:column;gap:20px;}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" type="text/css" href="cid:css-693682fe-ccc2-4474-a753-d0efc9796ff2@mhtml.blink" />
+        <title>找不到该页面</title>
+        
+        
+    <link type="text/css" rel="stylesheet" charset="UTF-8" href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.pgV-E-68K-A.L.W.O/am=gMA/d=0/rs=AN8SPfpszKJssl6IA0boGClFdsaAZGtXEQ/m=el_main_css"></head>
 
-    header{display:flex;align-items:center;justify-content:space-between;padding:18px 20px;border-radius:14px;background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));backdrop-filter: blur(6px);}
-    .brand{display:flex;align-items:center;gap:14px}
-    .logo{width:56px;height:56px;border-radius:10px;background:rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px}
-    .title{font-size:20px;font-weight:700;letter-spacing:0.6px}
-    .subtitle{font-size:12px;color:rgba(255,255,255,0.85);opacity:0.9}
+    <body>
+        <h1><strong><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">nginx错误！</font></font></strong></h1>
 
-    main{display:flex;flex-direction:column;flex:1;gap:18px}
-    .top-half{flex:1;display:flex;gap:18px}
-    .news{flex:1;border-radius:12px;padding:16px;background:var(--glass-bg);overflow:hidden;display:flex;flex-direction:column}
-    .news h2{margin:0 0 8px 0;font-size:18px}
+        <div class="content">
 
-    .news-list{display:flex;flex-direction:column;gap:10px;overflow:auto;padding-right:6px}
-    .news-item{padding:10px;border-radius:8px;background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));cursor:pointer;transition:transform .18s ease,box-shadow .18s ease}
-    .news-item:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(0,0,0,0.25)}
-    .news-item .meta{font-size:12px;color:rgba(255,255,255,0.85);opacity:0.9}
-    .news-item .headline{font-weight:600;margin-top:6px}
+            <h3><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">未找到您要查找的页面。</font></font></h3>
 
-    .preview{width:360px;border-radius:12px;padding:16px;background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));display:flex;flex-direction:column}
-    .preview h3{margin:0 0 8px 0}
-    .preview p{margin:0 0 8px 0;font-size:14px;color:rgba(255,255,255,0.92)}
-    .preview .read-btn{margin-top:auto;padding:8px 12px;border-radius:8px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.06);cursor:pointer}
+            <div class="alert">
+                <h2><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">网站管理员</font></font></h2>
+                <div class="content">
+                    <p><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">您的网站出现某些问题，导致网页丢失。这是
+                    </font></font><strong><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">nginx</font></font></strong><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">的默认 404 错误页面，随 Red Hat Enterprise Linux 一起发布。它位于
+                    </font></font><tt><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">/usr/share/nginx/html/404.html</font></font></tt></p>
 
-    .bottom-half{flex:1;display:flex;gap:18px}
-    .articles{flex:1;border-radius:12px;padding:16px;background:var(--glass-bg);overflow:auto}
-    .articles-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
-    .card{padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));cursor:pointer;transition:transform .18s ease,box-shadow .18s ease}
-    .card:hover{transform:translateY(-6px);box-shadow:0 10px 30px rgba(0,0,0,0.32)}
-    .card h4{margin:0 0 6px 0}
-    .card p{margin:0;font-size:13px;color:rgba(255,255,255,0.92)}
+                    <p><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">您应该为自己的网站定制此错误页面，或者编辑</font><strong><font dir="auto" style="vertical-align: inherit;">nginx</font></strong><font dir="auto" style="vertical-align: inherit;">配置文件
+                    </font><tt><font dir="auto" style="vertical-align: inherit;">/etc/nginx/nginx.conf</font></tt><font dir="auto" style="vertical-align: inherit;">中的</font></font><tt><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">error_page</font></font></tt><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">指令。</font></font><strong><font dir="auto" style="vertical-align: inherit;"></font></strong><font dir="auto" style="vertical-align: inherit;"></font><tt><font dir="auto" style="vertical-align: inherit;"></font></tt><font dir="auto" style="vertical-align: inherit;"></font></p>
 
-    .article-view{position:fixed;inset:0;display:none;align-items:flex-start;justify-content:center;padding:40px;z-index:80}
-    .article-sheet{width:min(900px,96%);max-height:90vh;overflow:auto;border-radius:12px;padding:22px;background:rgba(16,16,16,0.96);box-shadow:0 20px 60px rgba(0,0,0,0.6);color:#fff}
-    .close-btn{position:absolute;right:18px;top:18px;border:none;background:transparent;color:#fff;font-size:18px;cursor:pointer}
+                    <p><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">有关 Red Hat Enterprise Linux 的信息，请访问</font></font><a href="http://www.redhat.com/"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Red Hat, Inc. 网站</font></font></a><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">。Red Hat Enterprise Linux 的文档可</font></font><a href="http://www.redhat.com/docs/manuals/enterprise/"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">在 Red Hat, Inc. 网站 上找到</font></font></a><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">。</font></font></p>
 
-    @media (max-width:900px){
-      .top-half{flex-direction:column}
-      .preview{width:100%}
-      .news{order:2}
-    }
-  </style>
-</head>
-<body>
-  <div class="wrap">
-    <header>
-      <div class="brand">
-        <div class="logo">写</div>
-        <div>
-          <div class="title">赤影笔记</div>
-          <div class="subtitle">一份简单、干净的博客模版</div>
-        </div>
-      </div>
-      <nav>
-        <button id="new-post" style="padding:8px 12px;border-radius:8px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.06);color:#fff;cursor:pointer">写文章</button>
-      </nav>
-    </header>
+                </div>
+            </div>
 
-    <main>
-      <section class="top-half">
-        <section class="news">
-          <h2>新闻区</h2>
-          <div class="news-list" id="newsList"></div>
-        </section>
+            <div class="logos">
+                <a href="http://nginx.net/"><img src="https://files.modyolo.com/Guardilla%20VPN/nginx-logo.png" alt="[ 由 nginx 提供支持 ]" width="121" height="32"></a>
+                <a href="http://www.redhat.com/"><img src="https://files.modyolo.com/Guardilla%20VPN/poweredby.png" alt="[由 Red Hat Enterprise Linux 提供支持]" width="88" height="31"></a>
+            </div>
+        </div><div id="goog-gt-tt" class="VIpgJd-yAWNEb-L7lbkb skiptranslate" style="border-radius: 12px; margin: 0 0 0 -23px; padding: 0; font-family: 'Google Sans', Arial, sans-serif;" data-id=""><div id="goog-gt-vt" class="VIpgJd-yAWNEb-hvhgNd"><div class="VIpgJd-yAWNEb-hvhgNd-Ud7fr"><img src="https://fonts.gstatic.com/s/i/productlogos/translate/v14/24px.svg" width="24" height="24" alt=""><div class=" VIpgJd-yAWNEb-hvhgNd-IuizWc-i3jM8c " dir="ltr">原文</div></div><div class="VIpgJd-yAWNEb-hvhgNd-k77Iif"><div id="goog-gt-original-text" class="VIpgJd-yAWNEb-nVMfcd-fmcmS VIpgJd-yAWNEb-hvhgNd-axAV1"></div></div><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid ltr"><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od ltr" dir="ltr"><div class="VIpgJd-yAWNEb-hvhgNd-UTujCb">请对此翻译评分</div><div class="VIpgJd-yAWNEb-hvhgNd-eO9mKe">您的反馈将用于改进谷歌翻译</div></div><div class="VIpgJd-yAWNEb-hvhgNd-xgov5 ltr"><button id="goog-gt-thumbUpButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="翻译质量很棒" aria-label="翻译质量很棒" aria-pressed="false"><span id="goog-gt-thumbUpIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7H2v13h16c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM7 18H4V9h3v9zm14-7l-3 7H9V8l4.34-4.34L12 9h9v2z"></path></svg></span><span id="goog-gt-thumbUpIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7v13h11c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM5 7H1v13h4V7z"></path></svg></span></button><button id="goog-gt-thumbDownButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="翻译质量很差" aria-label="翻译质量很差" aria-pressed="false"><span id="goog-gt-thumbDownIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7h5V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zM17 6h3v9h-3V6zM3 13l3-7h9v10l-4.34 4.34L12 15H3v-2z"></path></svg></span><span id="goog-gt-thumbDownIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zm16 0h4V4h-4v13z"></path></svg></span></button></div></div><div id="goog-gt-votingHiddenPane" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><form id="goog-gt-votingForm" action="https://translate.googleapis.com/translate_voting?client=te_lib" method="post" target="votingFrame" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><input type="text" name="sl" id="goog-gt-votingInputSrcLang"><input type="text" name="tl" id="goog-gt-votingInputTrgLang"><input type="text" name="query" id="goog-gt-votingInputSrcText"><input type="text" name="gtrans" id="goog-gt-votingInputTrgText"><input type="text" name="vote" id="goog-gt-votingInputVote"></form><iframe name="votingFrame" frameborder="0"></iframe></div></div></div>
+    
 
-        <aside class="preview" id="newsPreview">
-          <h3>新闻预览</h3>
-          <p id="previewText">点击左侧任意新闻以查看预览。</p>
-          <button class="read-btn" id="openPreview">阅读全文</button>
-        </aside>
-      </section>
-
-      <section class="bottom-half">
-        <section class="articles">
-          <h2>文章区</h2>
-          <div class="articles-grid" id="articlesGrid"></div>
-        </section>
-      </section>
-    </main>
-  </div>
-
-  <div class="article-view" id="articleView">
-    <div class="article-sheet" id="articleSheet">
-      <button class="close-btn" id="closeArticle">✕</button>
-      <h1 id="articleTitle"></h1>
-      <div id="articleMeta" style="color:rgba(255,255,255,0.75);margin-bottom:12px;font-size:13px"></div>
-      <div id="articleContent" style="line-height:1.8;font-size:16px"></div>
-    </div>
-  </div>
-
-  <script>
-    const news = [
-      {id:1,title:'本地 Tech 公司发布新产品',time:'2025-09-25',summary:'这家公司推出了一款能让开发更轻松的小工具。'},
-      {id:2,title:'画廊开幕：当代艺术展',time:'2025-09-24',summary:'本次展览聚焦城市记忆与数字影像。'},
-      {id:3,title:'交通调整：市中心临时封路',time:'2025-09-23',summary:'周末将进行道路维护，出行请注意绕行。'}
-    ];
-
-    const articles = [
-      {id:101,title:'如何写出第一篇博客文章',excerpt:'从选题、结构到发布，一步一步带你完成第一篇博客文章。',content:`<p>写博客的第一步是明确目标...</p>` ,date:'2025-09-20'},
-      {id:102,title:'年前的那次短途旅行',excerpt:'一段关于山间小路与清晨薄雾的记忆。',content:`<p>那天的天刚亮...</p>` ,date:'2025-08-11'},
-      {id:103,title:'简单的 CSS 小技巧',excerpt:'提高页面表现的 5 个小技巧。',content:`<ol><li>使用变量统一配色。</li></ol>` ,date:'2025-07-05'}
-    ];
-
-    const newsList = document.getElementById('newsList');
-    const previewText = document.getElementById('previewText');
-    const openPreview = document.getElementById('openPreview');
-    let selectedNews = null;
-
-    function renderNews(){
-      newsList.innerHTML = '';
-      news.forEach(n=>{
-        const el = document.createElement('div');
-        el.className = 'news-item';
-        el.innerHTML = `<div class="meta">${n.time}</div><div class="headline">${n.title}</div><div class="brief" style="font-size:13px;color:rgba(255,255,255,0.9);margin-top:6px">${n.summary}</div>`;
-        el.onclick = ()=>{ selectNews(n); };
-        newsList.appendChild(el);
-      })
-    }
-    function selectNews(n){
-      selectedNews = n;
-      previewText.textContent = n.summary;
-    }
-    openPreview.onclick = ()=>{
-      if(!selectedNews){ alert('请先选择一条新闻。'); return; }
-      openArticle({id: 'news-'+selectedNews.id, title:selectedNews.title, date:selectedNews.time, content:`<p>${selectedNews.summary}</p>`});
-    }
-
-    const articlesGrid = document.getElementById('articlesGrid');
-    function renderArticles(){
-      articlesGrid.innerHTML='';
-      articles.forEach(a=>{
-        const c = document.createElement('div');
-        c.className='card';
-        c.innerHTML = `<h4>${a.title}</h4><p>${a.excerpt}</p><div style=\"margin-top:8px;color:rgba(255,255,255,0.8);font-size:12px\">${a.date}</div>`;
-        c.onclick = ()=> openArticle(a);
-        articlesGrid.appendChild(c);
-      })
-    }
-
-    const articleView = document.getElementById('articleView');
-    const articleTitle = document.getElementById('articleTitle');
-    const articleMeta = document.getElementById('articleMeta');
-    const articleContent = document.getElementById('articleContent');
-    const closeArticle = document.getElementById('closeArticle');
-
-    function openArticle(a){
-      articleTitle.textContent = a.title;
-      articleMeta.textContent = a.date ? `发布日期：${a.date}` : '';
-      articleContent.innerHTML = a.content || '<p>暂无内容</p>';
-      articleView.style.display = 'flex';
-      history.pushState({articleId:a.id}, a.title, '#article-'+a.id);
-    }
-    closeArticle.onclick = ()=>{
-      articleView.style.display = 'none';
-      history.pushState({}, '', location.pathname);
-    }
-
-    window.addEventListener('popstate', ()=>{
-      const hash = location.hash;
-      if(hash.startsWith('#article-')){
-        const id = hash.replace('#article-','');
-        const a = articles.find(x=>String(x.id)===String(id)) || null;
-        if(a) openArticle(a);
-      } else {
-        articleView.style.display = 'none';
-      }
-    })
-
-    renderNews();
-    renderArticles();
-
-    document.getElementById('new-post').addEventListener('click', ()=>{
-      alert('这是一个示例按钮。');
-    });
-
-    window.addEventListener('load', ()=>{
-      if(location.hash){
-        window.dispatchEvent(new PopStateEvent('popstate'));
-      }
-    });
-  </script>
-</body>
-</html>
+</body></html>
+<path d="M0 0h24v24H0z" fill="none"/><defs><path d="M21.5 5h-9.17L11 1H2.5C1.68 1 1 1.68 1 2.5v15c0 .83.68 1.5 1.5 1.5h9.17L13 23h8.5c.82 0 1.5-.68 1.5-1.5v-15c0-.83-.68-1.5-1.5-1.5z" id="a"/></defs><clipPath id="b"><use overflow="visible" xlink:href="#a"/></clipPath><g clip-path="url(#b)"><image height="31" opacity=".2" overflow="visible" transform="translate(3 1)" width="29" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAfCAYAAAAbW8YEAAAACXBIWXMAAAsSAAALEgHS3X78AAAA GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABQBJREFUeNq8V8tu20YUvXdm+LCk RKiMwI1TFEXhVZJd1gW66xekv9DPqPsvXdU/UaDroJskKy+CInCcGpKtFy2SM/f2DEXZia0odtKW AkFJ8zhzzn3S0Ycvps+79EMDbj3Yfgv4EM+XTN/fEOb3Zg3AXmq7j64D5/e/x/EfzZMnX5jx+LFZ LLyp6yNDOzskYb6RubFdpbdvKUl2Jc+d9PvP5dmzUyH6TVoYXQOq+H5g9vb+cONsO9maLpIyyZPU kZNAppmh9Vpg5kSXwCSVJ5/Vi/r8Tl73y2F9ePidJ3oaga+B4vkUgF+6EW1ndz11gvNdDdL1bDNr yKkCWO16thyUGWIIeae2ZGvn1of5xFExoGF5eHgM4ANZsW032Tf05MjeW+xmNKeedeWAg9tmywPM 6rGYzOAPBSfQ5Ss0Nf4pAmRrSmBP1ehIxQ6DpxF1aXaSH5X0bDcAR1aOxLRPtPdrZrwnd55Sx3gz IMO72OwBq9kmox0RSkHHRNxrRJWFDbQXKpR1xN4eOfx0NqnMdFHulY/rw/1RAE5crEvvffGCvX/E VUoOC3Mm24eaO6TyNZjeB5E+sDLMt2tCqZEW8lcgPSU2x0IhKlAYoTP4xUTueUMvHvJK3ouQ8ffH HP62JpGeg/VSYciqNADbHQxvY5etdr65yhNXlG2B5xjzgWfHJoSeZ5Olbuaq+czQyYSvxal701dJ SWoigRNqXItjORhsC+x74NfDtPQ6aGPkgAUlGROpTKBQR4gbB1x6fjz3/DK8GsoHj/SVG6pJACi+ NhQdApsQJFPCeliYKImgeEJmylc3Xzw5yp9xnIMYMkZt9HjVhK/GeHtqZI5+KUVJXtSVQcwcYDPo FI93jhW+DWSjzZrGts0NQSwOZTFoMaMBaly6CTFZG2KXUt3Z1aQzC36rKrFJ0cgUb6aZRnuRwjtI lo7Eq3CLWSya4eJ7a+TN2eudvClbk17ItFepoQLrpyQyxkZTjBYIiwqnXwF/1mXerQivtu+Hohp7 tf7cWJnCTgBleCQ3bBEaPiaCTRXkNqBLu955o2kv+NzIIogDkGlAEfuwL51DYh9z3sdK1y1ALyX2 FxJLK3Fj339NYnO16P4fEl8J9HUSaytxTHFRYqrhnJ60AZU2lNpDNOULaZH1FqBXJS4LhN8ECeos MgbLWUx3AK+xv4+ZKN6ACxxlZw0xDzdZKj7Z6E1ALyQ+91WNclwgIU6wwRli7xTkzjA8BQCSBxfL +MUhlnGMDMYlfsPuWsdSF4GZa226io1MW4nzPvkQbWgDnIlGYHSCTU+QbOI9BNtTTB7hxmEIh+FT KDJGZoiVpkA6KmNRj90E0duPNmaNxJ29QVh0RxWsOMNRh0JyDIk7LBK1iw62BV1cLKaXpY2n+HWs GkZidOZEysp3fDK4K3TvK90EisGf6bD/k6CTqDpBZt6EoTWcSXQU5mhX1FvNm/XRiyQiaw0XKmDi EXL9kdV6FMMu9kvpyUDoB3SIB5uYxp2+fSr9P7Na7IOipsUpxZ5BqISNTw1rFy6bGrKoIjAbS9uu EKoT2NowqiWJ7cqM0KD9lT8X2t+lKz3S2l4Z/e4v9ptXzcFyn9Zd8nlHHcjXaNZsaCvKqlW6dWP2 Ibr7sdE2e68H9sy+TvN5J6nwydLUvtuWfmoLugH4Zg34JzbbHwO/wavG+68VdJPXihuC/zcvUJ+0 0W2ufwQYAGHKK2CFMIrzAAAAAElFTkSuQmCC"/><radialGradient cx="7.394" cy="5.437" gradientUnits="userSpaceOnUse" id="c" r="23.416"><stop offset="0" stop-color="#EEE"/><stop offset=".432" stop-color="#E6E6E6"/><stop offset="1" stop-color="#E1E1E1"/></radialGradient><path d="M13 23h8.5c.82 0 1.5-.68 1.5-1.5v-15c0-.83-.68-1.5-1.5-1.5H7l6 18z" fill="url(#c)"/></g><path clip-path="url(#b)" d="M18 11v-1h-1v1h-3.75v1h5.32c-.2.49-.6 1.3-1.32 2.14-.51-.6-.86-1.18-1.1-1.64h-1.11c.36.84.9 1.66 1.52 2.38l-2.6 2.58.71.71 2.58-2.58 2.58 2.58.71-.71-2.6-2.58c.74-.86 1.33-1.85 1.68-2.88H21v-1h-3z" fill="#607D8B"/><linearGradient gradientUnits="userSpaceOnUse" id="d" x1="12.333" x2="23" y1="14" y2="14"><stop offset="0" stop-color="#212121" stop-opacity=".1"/><stop offset="1" stop-color="#212121" stop-opacity=".02"/></linearGradient><path clip-path="url(#b)" d="M12.33 5L23 15.67V23H13" fill="url(#d)"/><g clip-path="url(#b)"><image height="8" opacity=".1" overflow="visible" transform="translate(10.5 17.5)" width="9" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAYAAAALpr0TAAAACXBIWXMAAAsSAAALEgHS3X78AAAA GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAOFJREFUeNp0UD1LA0EUnLe7JsJh CiFpLVNYaS3411L7Z/InUpgmqRIRLGxEOEVQsoRcbnecu6AGTB4M72vevjdr+DPDf+Nvs3858q7a Fp4oDOZBJ5dJMCVDzJ2T+LYYpeAyTj39UMNXhA00HABXKy89bY6UlqrFoMHm5QK0a/mbXYxSyyZm eCBTe5Kr68+NGq+Kv4QzoSM8q3ZP8imjXjdEv/6Ysnd+q6a7UN4XFsKYlifbUJXvj3ftytAqM1vJ z6UgGvgiIbN90g8RVddFKZ/pzqX+Y5NDtdonHTI71vgWYADzWmdx/4fpmQAAAABJRU5ErkJggg=="/><path d="M17 19l-4 4-1.33-4" fill="#3F51B5"/></g><path clip-path="url(#b)" d="M21.5 5H7l.04.12H21.5c.82 0 1.5.67 1.5 1.5V6.5c0-.83-.68-1.5-1.5-1.5z" fill="#212121" fill-opacity=".02"/><path clip-path="url(#b)" d="M21.5 22.88H13L11.71 19h-.04L13 23h8.5c.82 0 1.5-.68 1.5-1.5v-.12c0 .82-.68 1.5-1.5 1.5z" fill="#212121" fill-opacity=".1"/><path clip-path="url(#b)" d="M12.97 22.91L13 23l4-4h-.12" fill="#1A237E" fill-opacity=".2"/><path clip-path="url(#b)" d="M11.67 19.12h5.21L17 19h-5.33" fill="#1A237E" fill-opacity=".1"/><g clip-path="url(#b)"><image height="22" opacity=".2" overflow="visible" transform="translate(-.5 -.5)" width="20" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAXCAYAAADk3wSdAAAACXBIWXMAAAsSAAALEgHS3X78AAAA GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAUpJREFUeNqslbFOwzAQQO/sQCRc sqAOlRgrMjCVr+Er+IZ+Ax/WTCwVeyVQl9IOQY2Pc2qhNFwcGsdSrHNsP52fpTPCeUP4X6PQZA2Z Pi41lqXRpCYKtA5tsFBVFdo9penh821ZSWsS112X1hBdPXG44BSyQMaEoHcJ6QJLu+LxrguKQDQB UAuOn3nfLATlqc0psmvuvyQVibfARyaXoQPeh6Hk9Mw4uL2bv3xs31+P7UWq5Rd7LsvN8akg5zBP KTPSIgWXN3OCQo6ARkpiCNQd36maegV6DGgjW1lBJFRWMBQaVDAUGlQwAvSvghhop4IYaKeCkaDn CmKhooJYqKhAtao59VV1od3w99BU4EsfcQVXruBuPBMvgJIv1sdmPSVA3HOhLvy/bCC0qDk8rjP9 TtWB36gVv1Hrvjeq792SjokRF/Z7Fz8CDAC8EmWDKVGDLgAAAABJRU5ErkJggg=="/><path d="M11 1H2.5C1.68 1 1 1.68 1 2.5v15c0 .83.68 1.5 1.5 1.5H17L11 1z" fill="#4285F4"/></g><path clip-path="url(#b)" d="M2.5 1C1.68 1 1 1.68 1 2.5v.12c0-.82.68-1.5 1.5-1.5H11V1H2.5z" fill="#FFF" fill-opacity=".02"/><path clip-path="url(#b)" d="M11 1v.12l5.92 17.75H2.5c-.82 0-1.5-.67-1.5-1.5v.12c0 .84.68 1.51 1.5 1.51H17L11 1z" fill="#212121" fill-opacity=".1"/><g clip-path="url(#b)"><path d="M7.5 10v1.2h1.98c-.08.52-.6 1.51-1.98 1.51-1.2 0-2.17-.99-2.17-2.21S6.3 8.29 7.5 8.29c.68 0 1.13.29 1.39.54l.95-.92C9.24 7.35 8.44 7 7.5 7 5.57 7 4 8.57 4 10.5S5.57 14 7.5 14c2.02 0 3.36-1.42 3.36-3.42 0-.23-.02-.41-.06-.58H7.5z" fill="#EEE"/><path d="M4 7h7v7H4z" fill="none"/></g><radialGradient cx="1.457" cy="1.42" gradientUnits="userSpaceOnUse" id="e" r="29.792"><stop offset="0" stop-color="#FFF" stop-opacity=".1"/><stop offset="1" stop-color="#FFF" stop-opacity="0"/></radialGradient><path d="M21.5 5h-9.17L11 1H2.5C1.68 1 1 1.68 1 2.5v15c0 .83.68 1.5 1.5 1.5h9.17L13 23h8.5c.82 0 1.5-.68 1.5-1.5v-15c0-.83-.68-1.5-1.5-1.5z" fill="url(#e)"/></svg>
